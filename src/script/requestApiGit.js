@@ -27,7 +27,7 @@ async function fetchApi (value){
                 
                 localStorage.setItem('Repositories', JSON.stringify(getRepositories))
                
-                window.location.href = 'http://127.0.0.1:5500/Asset/User.html'       
+                window.location.href = 'https://gbizarria.github.io//User.html'       
         
             }else{
             
@@ -36,7 +36,7 @@ async function fetchApi (value){
 
         }catch (erro) {           
             
-            window.location.href = 'http://127.0.0.1:5500/Asset/nofoud.html'
+            window.location.href = 'https://gbizarria.github.io/nofoud.html'
         }       
 }
 
