@@ -1,0 +1,140 @@
+@import url(./globalStyle.css);
+body{
+    background-color: var(--black-color-0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: Inter,sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.user{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    color: var(--white-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.name__user{
+    cursor: pointer;
+}
+
+#avatar{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 150px;
+    border: 2px solid var(--Violet-color-0);
+    background:  lightgray 50% / cover no-repeat;
+    cursor: pointer;
+}
+#avatar:hover{
+    transform: scale(1.1);
+    transition: 150ms linear;
+}
+
+header>button{
+    width: 169px;
+    height: 38px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    background: var(--black-color-1);
+    color:var(--white-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.repositories{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+    row-gap: 50px;
+}
+
+.cards{
+    width: 381px;
+    height: 243px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid var(--black-color-1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+.cards>h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--white-color);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+.cards>p{
+    width: 325px;
+    color: var(--grey-color-2);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;   
+}
+.cards>button{
+    width: 93px;
+    display: flex;
+    height: 28px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    background: var(--black-color-1);
+    cursor: pointer;
+  
+}
+
+.cards>button:hover{
+    background: var(--Violet-color-0);
+    border: none;
+}
+.link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: Inter,sans-serif;
+}
